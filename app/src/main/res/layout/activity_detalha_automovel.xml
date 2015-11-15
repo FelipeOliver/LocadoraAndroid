@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.locadoraandroid.detalha_automovel">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo: "
+        android:id="@+id/label_modelo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--Modelo--"
+        android:id="@+id/txt_modelo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/label_modelo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor: "
+        android:id="@+id/label_valor"
+        android:layout_alignTop="@+id/txt_valor"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txt_modelo"
+        android:layout_alignBottom="@+id/txt_valor" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--Valor--"
+        android:id="@+id/txt_valor"
+        android:layout_below="@+id/label_modelo"
+        android:layout_toRightOf="@+id/label_valor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa: "
+        android:id="@+id/label_placa"
+        android:layout_alignTop="@+id/txt_placa"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--Placa--"
+        android:id="@+id/txt_placa"
+        android:layout_below="@+id/txt_valor"
+        android:layout_toEndOf="@+id/label_valor" />
+</RelativeLayout>
